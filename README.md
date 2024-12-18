@@ -176,9 +176,10 @@ To set up the project in your local environment, configure the `.env` file as fo
       }
       ```   
  
- - **Response Sample**:
-    ```json
-      {  "success": true,
+- **Response Sample**:  
+\`\`\`json
+{
+  "success": true,
   "message": "Issue added successfully",
   "data": {
     "_id": "be781077",
@@ -195,9 +196,9 @@ To set up the project in your local environment, configure the `.env` file as fo
     "userId": "user12345",
     "timestamp": "2024-12-18T21:55:21.663Z",
     "__v": 0
-         }
-        }
-          ```    
+  }
+}
+\`\`\` 
  
 ## Contributing
 - **Add Status**:
