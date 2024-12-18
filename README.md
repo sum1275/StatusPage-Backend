@@ -1,12 +1,15 @@
 # StatusPage Backend
+
 StatusPage Backend is a backend service for a real time status update. 
+
 ## Installation
+
 To install UnstopBackend, follow these steps:
 1. Clone the repository:
    ```bash
    https://github.com/sum1275/StatusPage-Backend.git
 
-## Database and Server Configuration for Development Environment
+### Database and Server Configuration for Development Environment
 
 To set up the project in your local environment, configure the `.env` file as follows:
 
@@ -17,12 +20,14 @@ To set up the project in your local environment, configure the `.env` file as fo
    # Environment variables for development
    PORT=5000
    MONGODB_URI=mongodb://localhost:27017/Systemstatus
+   ```
 
 3. In Terminal type npm run dev to start the backend.
 4. Open MongoDB Compass and click on "New Connection."
 5. Enter the connection string `MONGODB_URI=mongodb://localhost:27017/Systemstatus` and click "Connect."
 
-## API Endpoints
+### API Endpoints
+
 - **Open Issues Status**:
   - **Method**: `GET`
   - **Endpoint**: `https://statuspage-backend.onrender.com/api/status/`
@@ -74,7 +79,6 @@ To set up the project in your local environment, configure the `.env` file as fo
     "count": 4
   }
     }
-
     ```
 
 - **All Issues**:
@@ -120,8 +124,6 @@ To set up the project in your local environment, configure the `.env` file as fo
         "timestamp": "2024-12-17T03:13:26.316Z",
         "__v": 0
       },
-     
-      
       {
         "_id": "43f92479",
         "application": "EnterpriseApp",
@@ -165,8 +167,8 @@ To set up the project in your local environment, configure the `.env` file as fo
 -  - **Method**: `POST`
   - **Endpoint**: `http://localhost:5000/api/status/issues`
   - **Request Body**:
-    ```json form-data
-    
+
+```json    
     { "title": "Bug in login functionality",
   "description": "The login page throws an error when submitting the form with valid credentials.",
   "application": "Web Portal",
@@ -174,10 +176,10 @@ To set up the project in your local environment, configure the `.env` file as fo
   "completed": false,
   "userId": "user12345"
       }
-      ```   
+```   
  
 - **Response Sample**:  
-\`\`\`json
+```json
 {
   "success": true,
   "message": "Issue added successfully",
@@ -198,22 +200,22 @@ To set up the project in your local environment, configure the `.env` file as fo
     "__v": 0
   }
 }
-\`\`\` 
+``` 
  
 ## Contributing
 - **Add Status**:
   - **Method**: `POST`
   - **Endpoint**: `http://localhost:5000/api/status/issues/:issueId`
   - **Request Body**:
-    ```json form-data
+```json
    { "subtitle": "Degraded performance",
      "description": "The application is running slower than expected."
   }
 
-    ```
+```
 
 - **Response Body**:
- ```json form-data
+ ```json
    {
   "success": true,
   "message": "Status added successfully",
@@ -239,13 +241,13 @@ To set up the project in your local environment, configure the `.env` file as fo
     "__v": 0
   }
 }
+```
 
-     ```    
 - **Delete Issue**:
   - **Method**: `DELETE`
   - **Endpoint**: `http://localhost:5000/api/status/issue/:issueId`
   - **Response Body**:
- ```json form-data
+ ```json
     {  "success": true,
   "message": "Issue deleted successfully",
   "data": {
@@ -270,7 +272,7 @@ To set up the project in your local environment, configure the `.env` file as fo
     "__v": 0
   }
 }
-    ```
+```
     
 Contributions to Status Backend are welcome. 
 
