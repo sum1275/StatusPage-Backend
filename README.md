@@ -157,8 +157,8 @@ To set up the project in your local environment, configure the `.env` file as fo
     
     ],
     "count": 9
-  }
-}
+     }
+       }
     ```
 
 - **Add an Issue**:
@@ -166,9 +166,7 @@ To set up the project in your local environment, configure the `.env` file as fo
   - **Endpoint**: `http://localhost:5000/api/status/issues`
   - **Request Body**:
     ```json form-data
-   
-{
-  "title": "Bug in login functionality",
+    { "title": "Bug in login functionality",
   "description": "The login page throws an error when submitting the form with valid credentials.",
   "application": "Web Portal",
   "subtitle": "Major outage",
@@ -196,9 +194,9 @@ To set up the project in your local environment, configure the `.env` file as fo
     "userId": "user12345",
     "timestamp": "2024-12-18T21:55:21.663Z",
     "__v": 0
-  }
-}
-    ```    
+         }
+        }
+      ```    
  
 ## Contributing
 - **Add Status**:
@@ -206,9 +204,8 @@ To set up the project in your local environment, configure the `.env` file as fo
   - **Endpoint**: `http://localhost:5000/api/status/issues/:issueId`
   - **Request Body**:
     ```json form-data
-   {
-  "subtitle": "Degraded performance",
-  "description": "The application is running slower than expected."
+   { "subtitle": "Degraded performance",
+     "description": "The application is running slower than expected."
 }
 
     ```
