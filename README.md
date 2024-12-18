@@ -73,7 +73,7 @@ To set up the project in your local environment, configure the `.env` file as fo
     ],
     "count": 4
   }
-}
+    }
 
     ```
 
