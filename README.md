@@ -166,17 +166,18 @@ To set up the project in your local environment, configure the `.env` file as fo
   - **Endpoint**: `http://localhost:5000/api/status/issues`
   - **Request Body**:
     ```json form-data
-    { "title": "Bug in login functionality",
+       { "title": "Bug in login functionality",
   "description": "The login page throws an error when submitting the form with valid credentials.",
   "application": "Web Portal",
   "subtitle": "Major outage",
   "completed": false,
   "userId": "user12345"
 }
-    ```   
+     ```   
+ 
  - **Response Sample**:
     ```json
-  {
+      {
   "success": true,
   "message": "Issue added successfully",
   "data": {
@@ -196,7 +197,7 @@ To set up the project in your local environment, configure the `.env` file as fo
     "__v": 0
          }
         }
-      ```    
+          ```    
  
 ## Contributing
 - **Add Status**:
