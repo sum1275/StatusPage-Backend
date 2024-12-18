@@ -83,9 +83,7 @@ To set up the project in your local environment, configure the `.env` file as fo
 - **Endpoint**: `https://statuspage-backend.onrender.com/api/status/allIssues`
  - **Response Sample**:
     ```json
-       
-
-{
+       {
   "success": true,
   "message": "Fetched all issues successfully",
   "data": {
