@@ -4,7 +4,7 @@ StatusPage Backend is a backend service for a real time status update.
 To install UnstopBackend, follow these steps:
 1. Clone the repository:
    ```bash
-https://github.com/sum1275/StatusPage-Backend.git
+   https://github.com/sum1275/StatusPage-Backend.git
 
 ## Database and Server Configuration for Development Environment
 
