@@ -208,13 +208,13 @@ To set up the project in your local environment, configure the `.env` file as fo
     ```json form-data
    { "subtitle": "Degraded performance",
      "description": "The application is running slower than expected."
-}
+  }
 
     ```
 
 - **Response Body**:
-    ```json form-data
-{
+ ```json form-data
+   {
   "success": true,
   "message": "Status added successfully",
   "data": {
@@ -240,14 +240,13 @@ To set up the project in your local environment, configure the `.env` file as fo
   }
 }
 
-    ```    
+     ```    
 - **Delete Issue**:
   - **Method**: `DELETE`
   - **Endpoint**: `http://localhost:5000/api/status/issue/:issueId`
   - **Response Body**:
-    ```json form-data
-  {
-  "success": true,
+ ```json form-data
+    {  "success": true,
   "message": "Issue deleted successfully",
   "data": {
     "_id": "be781077",
