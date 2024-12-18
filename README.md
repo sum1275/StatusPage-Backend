@@ -6,8 +6,10 @@ StatusPage Backend is a backend service for a real time status update.
 
 To install UnstopBackend, follow these steps:
 1. Clone the repository:
-   ```bash
-   https://github.com/sum1275/StatusPage-Backend.git
+
+```bash
+https://github.com/sum1275/StatusPage-Backend.git
+```
 
 ### Database and Server Configuration for Development Environment
 
@@ -16,11 +18,11 @@ To set up the project in your local environment, configure the `.env` file as fo
 1. Create a file named `.env` in the root directory of the project.
 2. Add the following content to the `.env` file:
 
-   ```plaintext
-   # Environment variables for development
-   PORT=5000
-   MONGODB_URI=mongodb://localhost:27017/Systemstatus
-   ```
+```plaintext
+# Environment variables for development
+PORT=5000
+MONGODB_URI=mongodb://localhost:27017/Systemstatus
+```
 
 3. In Terminal type npm run dev to start the backend.
 4. Open MongoDB Compass and click on "New Connection."
@@ -32,9 +34,10 @@ To set up the project in your local environment, configure the `.env` file as fo
   - **Method**: `GET`
   - **Endpoint**: `https://statuspage-backend.onrender.com/api/status/`
    - **Response Sample**:
-    ```json
-       {  "success": true,
-    "message": "Fetched incomplete issues successfully",
+```json
+{
+  "success": true,
+  "message": "Fetched incomplete issues successfully",
   "data": {
     "issues": [
       {
@@ -78,20 +81,19 @@ To set up the project in your local environment, configure the `.env` file as fo
     ],
     "count": 4
   }
-    }
-    ```
+}
+```
 
 - **All Issues**:
 - **Method**: `GET`
 - **Endpoint**: `https://statuspage-backend.onrender.com/api/status/allIssues`
  - **Response Sample**:
-    ```json
-       { "success": true,
-   "message": "Fetched all issues successfully",
-   "data": {
+```json
+{
+  "success": true,
+  "message": "Fetched all issues successfully",
+  "data": {
     "issues": [
-      
-      
       {
         "_id": "62d0fd0e",
         "application": "EnterpriseApp",
@@ -159,9 +161,9 @@ To set up the project in your local environment, configure the `.env` file as fo
     
     ],
     "count": 9
-     }
-       }
-    ```
+  }
+}
+```
 
 - **Add an Issue**:
 -  - **Method**: `POST`
@@ -169,13 +171,14 @@ To set up the project in your local environment, configure the `.env` file as fo
   - **Request Body**:
 
 ```json    
-    { "title": "Bug in login functionality",
+{
+  "title": "Bug in login functionality",
   "description": "The login page throws an error when submitting the form with valid credentials.",
   "application": "Web Portal",
   "subtitle": "Major outage",
   "completed": false,
   "userId": "user12345"
-      }
+}
 ```   
  
 - **Response Sample**:  
@@ -208,15 +211,15 @@ To set up the project in your local environment, configure the `.env` file as fo
   - **Endpoint**: `http://localhost:5000/api/status/issues/:issueId`
   - **Request Body**:
 ```json
-   { "subtitle": "Degraded performance",
-     "description": "The application is running slower than expected."
-  }
-
+{
+  "subtitle": "Degraded performance",
+  "description": "The application is running slower than expected."
+}
 ```
 
 - **Response Body**:
  ```json
-   {
+{
   "success": true,
   "message": "Status added successfully",
   "data": {
@@ -247,8 +250,10 @@ To set up the project in your local environment, configure the `.env` file as fo
   - **Method**: `DELETE`
   - **Endpoint**: `http://localhost:5000/api/status/issue/:issueId`
   - **Response Body**:
+
  ```json
-    {  "success": true,
+{
+  "success": true,
   "message": "Issue deleted successfully",
   "data": {
     "_id": "be781077",
